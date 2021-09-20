@@ -1,0 +1,45 @@
+:root {
+	--text-white: #FFFFFF;
+  --text-black: #000000;
+  --dark-red:#710707;
+	--bg-dark: #030303; 
+	--font-gold: #9d8665;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  /* font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.08em;
+  padding-top: 100px;
+  background-color: $primary-white-color; */
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

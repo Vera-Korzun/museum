@@ -1,0 +1,26 @@
+
+  @media screen and (min-width: 420px) {
+    .container {
+        width: 420px;
+    }
+  }
+
+   @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+   .container {
+        width: 1024px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+  }
