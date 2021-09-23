@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
@@ -81,7 +81,7 @@
                 Welcom <br />
                 to the louvre
               </h1>
-              <p class="welcome-description">From the castle to the museum</p>
+              <h2 class="welcome-description">From the castle to the museum</h2>
               <button class="welcome-button" type="button">
                 Discover the Louvre
               </button>
@@ -342,7 +342,7 @@
             <div class="tickets-part-right">
               <form class="tickets-type-form">
                 <div class="tickets-type">
-                  <h3 class="tickets-type-title">Ticket Type</h3>
+                  <h4 class="tickets-type-title">Ticket Type</h4>
                   <div class="tickets-type">
                     <label class="tickets-type-label" for="radio1">
                       <input
@@ -376,7 +376,7 @@
                 </div>
 
                 <div class="tickets-type tickets-amount">
-                  <h3 class="tickets-amount-title">Amount</h3>
+                  <h4 class="tickets-amount-title">Amount</h4>
                   <p class="tickets-amount-description">Basic 18+</p>
                   <div class="counter" id="counter">
                     <button
@@ -413,12 +413,12 @@
                       +
                     </button>
                   </div>
-                  <h3 class="tickets-amount-title">Total € 220</h3>
-                  <button class="tickets-amount-button" type="submit">
-                    Buy Now
-                  </button>
+                  <h4 class="tickets-amount-title">Total € 220</h4>
                 </div>
               </form>
+              <button class="tickets-amount-button" type="submit">
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
@@ -426,55 +426,97 @@
           <img class="tickets-img" src="./img/para.jpg" alt="galery" />
         </div>
       </section>
-      <section class="contacts" id="contacts">
+      <section class="contacts">
         <div class="container">
-          <h2>Contacts</h2>
-          <div>
-            <h3>Palais Royal Musee du Louvre</h3>
-            <ul class="list">
-              <li>
-                <a class="link" href="">
-                  <p>address:</p>
-                  <p>75001 Paris, France</p>
-                </a>
-              </li>
-              <li>
-                <a class="link" href="">
-                  <p>phone:</p>
-                  <p>+33(0) 1 40 20 50 50</p>
-                </a>
-              </li>
-              <li>
-                <a class="link" href="">
-                  <p>mail:</p>
-                  <p>info@louvre.fr</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <img src="" alt="" />
-          </div>
-        </div>
-
-        <div class="contacts-social">
-          <nav class="container">
-            <div class="logo">
-              <a class="link" href="">
-                <img src="" alt="" />
-                <span>Louvre</span>
-              </a>
-            </div>
-            <div>
-              <ul class="list">
-                <li>Visiting</li>
-                <li>Explore</li>
-                <li>Video</li>
-                <li>Gallery</li>
-                <li>Tickets</li>
-                <li>Contacts</li>
+          <h2 class="contacts-title">Contacts</h2>
+          <div class="contacts-part">
+            <div class="contacts-left-part">
+              <h3 class="contacts-left-title">
+                Palais Royal <br />
+                Musee du Louvre
+              </h3>
+              <ul class="list contacts-list">
+                <li class="contacts-list-item">
+                  <a class="link contacts-link" href="">
+                    address: 75001 Paris, France
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="link contacts-link" href="">
+                    phone: +33(0) 1 40 20 50 50
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="link contacts-link" href="">
+                    mail: info@louvre.fr
+                  </a>
+                </li>
               </ul>
             </div>
+            <div class="contacts-right-part">
+              <img src="./img/Rectangle.jpg" alt="Map" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="contacts-social">
+          <div class="social-part">
+            <nav class="social-navigation">
+              <div class="logo">
+                <a class="link logo-link" href="">
+                  <img class="logo-svg" src="./icon/frame.svg" alt="" />
+                  <span>Louvre</span>
+                </a>
+              </div>
+              <div class="contacts-navigation">
+                <ul class="list contacts-navigation-list">
+                  <li class="contacts-navigation-list-item">
+                    <a
+                      class="scrollto link navigation-item-link"
+                      href="#visiting"
+                      >Visiting</a
+                    >
+                  </li>
+                  <li class="contacts-navigation-list-item">
+                    <a
+                      class="scrollto link navigation-item-link"
+                      href="#explore"
+                      >Explore</a
+                    >
+                  </li>
+                  <li class="contacts-navigation-list-item">
+                    <a class="scrollto link navigation-item-link" href="#video"
+                      >Video</a
+                    >
+                  </li>
+                  <li class="contacts-navigation-list-item">
+                    <a
+                      class="scrollto link navigation-item-link"
+                      href="#gallery"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li class="contacts-navigation-list-item">
+                    <a
+                      class="scrollto link navigation-item-link"
+                      href="#tickets"
+                      >Tickets</a
+                    >
+                  </li>
+                  <li class="contacts-navigation-list-item">
+                    <a
+                      class="scrollto link navigation-item-link"
+                      href="#contacts"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
             <div>
               <ul class="list">
                 <li><a class="link" href="">youtube</a></li>
@@ -484,25 +526,29 @@
                 <li><a class="link" href="">pinterest</a></li>
               </ul>
             </div>
-          </nav>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div>
-          <p>&#169;</p>
-          <p>2021</p>
-        </div>
-        <div>
-          <a class="link" href="https://rs.school/js/" target="_blank">
-            The Rolling Scopes School
-          </a>
-        </div>
-        <div>
-          <a class="link" href="https://github.com/Vera-Korzun" target="_blank"
-            >Vera Korzun
-          </a>
+        <div class="footer-bottom">
+          <div class="footer-bottom-year">
+            <p class="footer-text">&#169;2021</p>
+          </div>
+          <div class="footer-bottom-school">
+            <a
+              class="link footer-text"
+              href="https://rs.school/js/"
+              target="_blank"
+            >
+              The Rolling Scopes School
+            </a>
+          </div>
+          <div class="footer-bottom-github">
+            <a
+              class="link footer-text"
+              href="https://github.com/Vera-Korzun"
+              target="_blank"
+              >Vera Korzun
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -512,5 +558,6 @@
 
     <!-- Подключаем файк скриптов -->
     <script src="./js/anchors.js"></script>
+    <script src="./js//counter.js"></script>
   </body>
 </html>
