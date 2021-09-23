@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museum</title>
+    <link rel="shortcut icon" href="./icon/favicon.svg" type="image/svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
@@ -16,111 +17,181 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <section class="container">
+    <header class="header">
+      <div class="container">
         <nav class="navigation">
           <div class="logo">
-            <a class="link" href="">
-              <img src="" alt="" />
+            <a class="link logo-link" href="">
+              <img class="logo-svg" src="./icon/frame.svg" alt="" />
               <span>Louvre</span>
             </a>
           </div>
           <div>
             <ul class="list navigation-list">
-              <li>Visiting</li>
-              <li>Explore</li>
-              <li>Video</li>
-              <li>Gallery</li>
-              <li>Tickets</li>
-              <li>Contacts</li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#visiting"
+                  >Visiting</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#explore"
+                  >Explore</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#video"
+                  >Video</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#tickets"
+                  >Tickets</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="scrollto link navigation-item-link" href="#contacts"
+                  >Contacts</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
-      </section>
+      </div>
     </header>
     <main>
       <section class="welcome">
         <div class="container">
-          <h1>Welcom to the louvre</h1>
-          <p>From the castle to the museum</p>
-          <button type="button">Discover the Louvre</button>
-          <img src="./img/welc.jpg" alt="Mona Lisa" width="1000" />
-          <p>slader</p>
+          <div class="welcome-part">
+            <div>
+              <img
+                class="welcome-img"
+                src="./img/welc.jpg"
+                alt="Mona Lisa"
+                width="1000"
+              />
+              <p>slader</p>
+            </div>
+            <div class="welcome-part-right">
+              <h1 class="welcome-titel">
+                Welcom <br />
+                to the louvre
+              </h1>
+              <p class="welcome-description">From the castle to the museum</p>
+              <button class="welcome-button" type="button">
+                Discover the Louvre
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="visiting">
         <div class="container">
-          <h2>Virtual tour</h2>
-          <ul class="list">
-            <li>
-              <a class="link" href="">
+          <h2 class="visiting-title">Virtual tour</h2>
+          <ul class="list visiting-list">
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
                 <div>
-                  <img src="./img/1.jpg" alt="Royal Palace" width="440" />
+                  <img
+                    class="visiting-link-img"
+                    src="./img/1.jpg"
+                    alt="Royal Palace"
+                    width="440"
+                  />
                 </div>
-                <div>
-                  <h3>Royal Palace</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <div>
-                  <img src="./img/2.jpg" alt="Denon Wing" width="440" />
-                </div>
-                <div>
-                  <h3>Denon Wing</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Royal Palace</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="">
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
                 <div>
-                  <img src="./img/3.jpg" alt="Colonnade Perrault" width="440" />
+                  <img
+                    class="visiting-link-img"
+                    src="./img/2.jpg"
+                    alt="Denon Wing"
+                    width="440"
+                  />
                 </div>
-                <div>
-                  <h3>Colonnade Perrault</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="link" href="">
-                <div>
-                  <img src="./img/4.jpg" alt="Greek hall" width="440" />
-                </div>
-                <div>
-                  <h3>Greek hall</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Denon Wing</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="">
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
                 <div>
-                  <img src="./img/5.jpg" alt="Mona Lisa" width="440" />
+                  <img
+                    class="visiting-link-img"
+                    src="./img/3.jpg"
+                    alt="Colonnade Perrault"
+                    width="440"
+                  />
                 </div>
-                <div>
-                  <h3>Mona Lisa</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Colonnade Perrault</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="">
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
                 <div>
-                  <img src="./img/6.jpg" alt="Night Palace" width="440" />
+                  <img
+                    class="visiting-link-img"
+                    src="./img/4.jpg"
+                    alt="Greek hall"
+                    width="440"
+                  />
                 </div>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Greek hall</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
+                </div>
+              </a>
+            </li>
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
                 <div>
-                  <h3>Night Palace</h3>
-                  <p>360° Virtual Tour</p>
-                  <p>Google Street Panorama View</p>
+                  <img
+                    class="visiting-link-img"
+                    src="./img/5.jpg"
+                    alt="Mona Lisa"
+                    width="440"
+                  />
+                </div>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Mona Lisa</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
+                </div>
+              </a>
+            </li>
+            <li class="visiting-list-item">
+              <a class="link visiting-link" href="">
+                <div>
+                  <img
+                    class="visiting-link-img"
+                    src="./img/6.jpg"
+                    alt="Night Palace"
+                    width="440"
+                  />
+                </div>
+                <div class="visiting-link-description">
+                  <h3 class="visiting-link-title">Night Palace</h3>
+                  <p class="visiting-tour">360° Virtual Tour</p>
+                  <p class="visiting-view">Google Street Panorama View</p>
                 </div>
               </a>
             </li>
@@ -128,103 +199,234 @@
         </div>
       </section>
       <section class="explore">
-        <div class="container">
-          <div>
-            <h2>Picture explore</h2>
-            <p>
+        <div class="container explore-part">
+          <div class="explore-part-left">
+            <h2 class="explore-title">Picture explore</h2>
+            <p class="explore-description">
               Las Meninas is a 1656 painting by Diego Velázquez, the leading
               artist of the Spanish Golden Age.
             </p>
-            <p>
-              It was cleaned in 1984 to remove a "yellow veil" of dust that had
-              gathered since the previous restoration in the 19th century.
+            <p class="explore-description">
+              It was cleaned in 1984 to remove a
+              <span class="explore-description-color">"yellow veil"</span> of
+              dust that had gathered since the previous restoration in the 19th
+              century.
             </p>
-            <p>
+            <p class="explore-description">
               The cleaning provoked furious protests, not because the picture
               had been damaged in any way, but because it looked different.
             </p>
           </div>
           <div>
-            <img src="./img/expl.jpg" alt="Las Meninas" width="720" />
+            <img
+              class="explore-img"
+              src="./img/expl.jpg"
+              alt="Las Meninas"
+              width="720"
+              height="700"
+            />
           </div>
         </div>
       </section>
       <section class="video">
-        <div class="container">
-          <div>
-            <h2>Video journey</h2>
-            <p>
+        <div class="container video-part">
+          <div class="video-part-top">
+            <h2 class="video-title">Video journey</h2>
+            <p class="video-description">
               Enter and visit one of the most famous museums in the world and
               enjoy masterpieces such as Mona Lisa or Hammurabi's Code
             </p>
           </div>
           <div>
-            <video src=""></video>
-            <p>slider</p>
+            <video controls width="1440">
+              <!-- <source src=".webm" type="video/webm" />
+
+              <source src=".mp4" type="video/mp4" /> -->
+
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+            <ul class="list video-list">
+              <li class="video-list-item">
+                <video controls width="452">
+                  <!-- <source src=".webm" type="video/webm" />
+
+              <source src=".mp4" type="video/mp4" /> -->
+
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </li>
+              <li class="video-list-item">
+                <video controls width="452">
+                  <!-- <source src=".webm" type="video/webm" />
+
+              <source src=".mp4" type="video/mp4" /> -->
+
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </li>
+              <li class="video-list-item">
+                <video controls width="452">
+                  <!-- <source src=".webm" type="video/webm" />
+
+              <source src=".mp4" type="video/mp4" /> -->
+
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </li>
+            </ul>
+            <img
+              class="video-pagination"
+              src="./img/video.png"
+              alt="Pagination"
+            />
           </div>
         </div>
       </section>
       <section class="gallery">
-        <div class="container">
-          <h2>Art Gallery</h2>
-          <ul class="list">
-            <li><img src="./img/galery1 1.jpg" alt="galery1" /></li>
-            <li><img src="./img/galery2 1.jpg" alt="galery2" /></li>
-            <li><img src="./img/galery3 1.jpg" alt="galery3" /></li>
-            <li><img src="./img/galery4 1.jpg" alt="galery4" /></li>
-            <li><img src="./img/galery5 1.jpg" alt="galery5" /></li>
-            <li><img src="./img/galery6 1.jpg" alt="galery6" /></li>
-            <li><img src="./img/galery7 1.jpg" alt="galery7" /></li>
-            <li><img src="./img/galery8 1.jpg" alt="galery8" /></li>
-            <li><img src="./img/galery9 1.jpg" alt="galery9" /></li>
-            <li><img src="./img/galery10 1.jpg" alt="galery10" /></li>
-            <li><img src="./img/galery12 1.jpg" alt="galery12" /></li>
-            <li><img src="./img/galery15 1.jpg" alt="galery15" /></li>
+        <div class="container gallery-part">
+          <h2 class="gallery-title">Art Gallery</h2>
+          <ul class="list gallery-list">
+            <li class="gallery-list-item">
+              <img src="./img/galery2.jpg" alt="galery2" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery9.jpg" alt="galery9" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery4.jpg" alt="galery4" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery6.jpg" alt="galery6" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery1.jpg" alt="galery1" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery8.jpg" alt="galery8" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery3.jpg" alt="galery3" />
+            </li>
+            <li class="gallery-list-item">
+              <img src="./img/galery5.jpg" alt="galery5" />
+            </li>
+
+            <li class="gallery-list-item">
+              <img src="./img/galery7.jpg" alt="galery7" />
+            </li>
+
+            <li class="gallery-list-item">
+              <img src="./img/galery10.jpg" alt="galery10" />
+            </li>
+
+            <li class="gallery-list-item">
+              <img src="./img/galery15.jpg" alt="galery15" />
+            </li>
+
+            <li class="gallery-list-item">
+              <img src="./img/galery12.jpg" alt="galery12" />
+            </li>
           </ul>
+          <div class="gallery-gradient"></div>
         </div>
       </section>
       <section class="tickets">
         <div class="container">
           <div>
-            <h2>BUY TICKETS</h2>
+            <h2 class="tickets-title">BUY TICKETS</h2>
           </div>
-          <div>
-            <div>
+          <div class="tickets-part">
+            <div class="tickets-part-left">
               <img src="./img/tick.jpg" alt="galery" />
             </div>
-            <div>
-              <div>
-                <h3>Ticket Type</h3>
-                <ul class="list">
-                  <li>
-                    <input type="radio" id="radio1" name="" value="" />
-                    <label for="radio1">Permanent exhibition</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="radio2" name="" value="" />
-                    <label for="radio2">Temporary exhibition</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="radio3" name="" value="" />
-                    <label for="radio3">Combined Admission</label>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3>Amount</h3>
-                <p>Basic 18+</p>
-                <p>Senior 65+</p>
-                <h3>Total € 220</h3>
-                <button type="button">Buy Now</button>
-              </div>
+            <div class="tickets-part-right">
+              <form class="tickets-type-form">
+                <div class="tickets-type">
+                  <h3 class="tickets-type-title">Ticket Type</h3>
+                  <div class="tickets-type">
+                    <label class="tickets-type-label" for="radio1">
+                      <input
+                        class="tickets-type-input"
+                        type="radio"
+                        id="radio1"
+                        name="radio"
+                        value="radio1"
+                        checked
+                      />Permanent exhibition
+                    </label>
+                    <label class="tickets-type-label" for="radio2"
+                      ><input
+                        class="tickets-type-input"
+                        type="radio"
+                        id="radio2"
+                        name="radio"
+                        value="radio2"
+                      />Temporary exhibition
+                    </label>
+                    <label class="tickets-type-label" for="radio3"
+                      ><input
+                        class="tickets-type-input"
+                        type="radio"
+                        id="radio3"
+                        name="radio"
+                        value="radio3"
+                      />Combined Admission
+                    </label>
+                  </div>
+                </div>
+
+                <div class="tickets-type tickets-amount">
+                  <h3 class="tickets-amount-title">Amount</h3>
+                  <p class="tickets-amount-description">Basic 18+</p>
+                  <div class="counter" id="counter">
+                    <button
+                      class="counter-button"
+                      type="button"
+                      data-action="decrement"
+                    >
+                      -
+                    </button>
+                    <span class="counter-span" id="value">1</span>
+                    <button
+                      class="counter-button"
+                      type="button"
+                      data-action="increment"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <p class="tickets-amount-description">Senior 65+</p>
+                  <div class="counter" id="counter">
+                    <button
+                      class="counter-button"
+                      type="button"
+                      data-action="decrement"
+                    >
+                      -
+                    </button>
+                    <span class="counter-span" id="value">1</span>
+                    <button
+                      class="counter-button"
+                      type="button"
+                      data-action="increment"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <h3 class="tickets-amount-title">Total € 220</h3>
+                  <button class="tickets-amount-button" type="submit">
+                    Buy Now
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <div>
-          <img src="./img/para.jpg" alt="galery" />
+        <div class="tickets-img">
+          <img class="tickets-img" src="./img/para.jpg" alt="galery" />
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2>Contacts</h2>
           <div>
@@ -304,5 +506,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- Подключаем JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Подключаем файк скриптов -->
+    <script src="./js/anchors.js"></script>
   </body>
 </html>
