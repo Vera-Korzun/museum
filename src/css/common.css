@@ -1,0 +1,45 @@
+:root {
+	--text-white: #FFFFFF;
+  --text-black: #000000;
+  --dark-red:#710707;
+	--bg-dark: #030303; 
+	--font-gold: #9d8665;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+font-size: 22px;
+line-height: 1.18;
+letter-spacing: 2px;
+color: var(--text-white);
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
