@@ -4,6 +4,12 @@
     border: var(--bg-dark);
 }
 
+@media screen and (max-width: 767px) {
+    .header {
+        height: 90px;
+    }
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -147,13 +153,19 @@
 	}
 }
 
-@media screen and (min-width: 1440px) {
-	 .burger-menu {
-		display: none;
-	}
+
+.burger-menu {
+		background-color: var(--bg-dark);
+		position: absolute;
+        padding-top: 35px;
+		left: 0px;
+        z-index: 100;
+        transition: all 500ms linear;
+        transform: translateX(-100%); 
 }
 
-@media screen and (max-width: 1439px) {
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
 	 .burger-menu {
 		background-color: var(--bg-dark);
 		position: absolute;
@@ -165,6 +177,23 @@
 }
 	}
 
+@media screen and (max-width: 1439px) {
+	 .burger-menu {
+		background-color: var(--bg-dark);
+		position: absolute;
+        /* padding-top: 35px; */
+		left: 0px;
+        z-index: 100;
+        transition: all 500ms linear;
+        transform: translateX(-100%); 
+}
+	}
+
+    @media screen and (min-width: 1440px) {
+	 .burger-menu {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
 	.burger-menu.is-open {
 		display: block;
@@ -344,7 +373,7 @@
 .welcome-part {
     background-color: var(--bg-dark);
     position: relative;   
-    padding-bottom: 80px;
+    /* padding-bottom: 20px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -364,6 +393,28 @@
   .welcome-part {
         padding-bottom: 60px;
        
+    }
+}
+
+ .welcome-part-right {
+        height: 544px;
+        /* padding-top: 50px;
+        padding-bottom: 212px; */
+        /* background-image: linear-gradient(to right, black 0%, transparent 60%), url(../assets/img/Welc/1.jpg); */
+        background-repeat: no-repeat;
+        background-size: 700px 525px;
+        background-position: right 0% bottom 100%;
+    }
+
+@media screen and (min-width: 768px) {
+    .welcome-part-right {
+        height: 768px;
+        /* padding-top: 50px;
+        padding-bottom: 212px; */
+        /* background-image: linear-gradient(to right, black 0%, transparent 60%), url(../assets/img/Welc/1.jpg); */
+        background-repeat: no-repeat;
+        background-size: 700px 525px;
+        background-position: right 0% bottom 100%;
     }
 }
 
@@ -396,7 +447,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .welcome-visit {
         position: absolute;
         z-index: 1000;
@@ -412,6 +463,12 @@
         letter-spacing: 5px;
         text-transform: uppercase;  
     }
+
+    @media screen and (max-width: 767px) {
+  .welcome-titel {
+        margin-top: 5px;
+    }
+}
 
 @media screen and (min-width: 768px) {
   .welcome-titel {
@@ -528,18 +585,59 @@
 
 .flex-wrapper {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 179px;
+    right: 20px;
     
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flex-wrapper {
+      top: 215px;
+    right: 20px
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .flex-wrapper {
+       top: 0px;
+       right: 20px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .flex-wrapper {
+       top: 0px;
+}
+}
+
 .slider-wrapper {
-  max-width: 1000px;
-  width: 100%;
-  height: 750px;
+  
+   max-width: 380px;
+  height: 285px;
   position: relative;
  /* box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75); */
 }
+
+@media screen and (min-width: 768px) {
+  .slider-wrapper {  
+      max-width: 728px;
+  height: 546px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-wrapper {  
+      max-width: 700px;
+  height: 525px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .slider-wrapper {
+      max-width: 1000px;
+  height: 750px;
+}
+} 
 
 .slide {
   width: 100%;
@@ -559,21 +657,27 @@
     top: 0;
     width: 100%;
     height: 100%;
+    
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-wrapper:after {
     background: linear-gradient(
     90deg,
     #000000 0%,
     rgba(0, 0, 0, 0.5) 16.19%,
     rgba(0, 0, 0, 0) 30.73%)
 }
+}
 
 .welcome-control {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding-top: 20px;
+    /* padding-top: 15px; */
     background-color: var(--text-black);
     position: absolute;
-    top: 459px;
+    top: 484px;
     right: 95px;
 }
 
